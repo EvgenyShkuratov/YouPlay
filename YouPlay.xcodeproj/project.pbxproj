@@ -13,6 +13,9 @@
 		44BFF6BE1E025B580018DEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BFF6BC1E025B580018DEBB /* Main.storyboard */; };
 		44BFF6C01E025B580018DEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BFF6BF1E025B580018DEBB /* Assets.xcassets */; };
 		44BFF6C31E025B580018DEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BFF6C11E025B580018DEBB /* LaunchScreen.storyboard */; };
+		44BFF6CD1E025B890018DEBB /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFF6CC1E025B890018DEBB /* HTTPService.m */; };
+		44BFF6D11E03551D0018DEBB /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFF6D01E03551D0018DEBB /* VideoCell.m */; };
+		44BFF6D61E035B780018DEBB /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFF6D51E035B780018DEBB /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		44BFF6BF1E025B580018DEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44BFF6C21E025B580018DEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44BFF6C41E025B580018DEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BFF6CB1E025B890018DEBB /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		44BFF6CC1E025B890018DEBB /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		44BFF6CF1E03551D0018DEBB /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		44BFF6D01E03551D0018DEBB /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		44BFF6D41E035B780018DEBB /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		44BFF6D51E035B780018DEBB /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,12 @@
 		44BFF6B21E025B580018DEBB /* YouPlay */ = {
 			isa = PBXGroup;
 			children = (
+				44BFF6CA1E025B640018DEBB /* Services */,
+				44BFF6D31E035B5F0018DEBB /* Model */,
+				44BFF6CE1E0355070018DEBB /* View */,
+				44BFF6D21E035B420018DEBB /* Controller */,
 				44BFF6B61E025B580018DEBB /* AppDelegate.h */,
 				44BFF6B71E025B580018DEBB /* AppDelegate.m */,
-				44BFF6B91E025B580018DEBB /* ViewController.h */,
-				44BFF6BA1E025B580018DEBB /* ViewController.m */,
 				44BFF6BC1E025B580018DEBB /* Main.storyboard */,
 				44BFF6BF1E025B580018DEBB /* Assets.xcassets */,
 				44BFF6C11E025B580018DEBB /* LaunchScreen.storyboard */,
@@ -77,6 +88,42 @@
 				44BFF6B41E025B580018DEBB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44BFF6CA1E025B640018DEBB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44BFF6CB1E025B890018DEBB /* HTTPService.h */,
+				44BFF6CC1E025B890018DEBB /* HTTPService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		44BFF6CE1E0355070018DEBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44BFF6CF1E03551D0018DEBB /* VideoCell.h */,
+				44BFF6D01E03551D0018DEBB /* VideoCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		44BFF6D21E035B420018DEBB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44BFF6B91E025B580018DEBB /* ViewController.h */,
+				44BFF6BA1E025B580018DEBB /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		44BFF6D31E035B5F0018DEBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44BFF6D41E035B780018DEBB /* Video.h */,
+				44BFF6D51E035B780018DEBB /* Video.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44BFF6BB1E025B580018DEBB /* ViewController.m in Sources */,
+				44BFF6D11E03551D0018DEBB /* VideoCell.m in Sources */,
+				44BFF6CD1E025B890018DEBB /* HTTPService.m in Sources */,
+				44BFF6D61E035B780018DEBB /* Video.m in Sources */,
 				44BFF6B81E025B580018DEBB /* AppDelegate.m in Sources */,
 				44BFF6B51E025B580018DEBB /* main.m in Sources */,
 			);
