@@ -112,11 +112,90 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="vb9-gQ-jbv" id="Kh0-UJ-1NE"/>
+                        <segue destination="QrA-uc-6mF" kind="presentation" identifier="VideoVC" id="ek8-nO-tNZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="eab-6g-fh0">
+            <objects>
+                <viewController id="QrA-uc-6mF" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k9m-k3-FV8"/>
+                        <viewControllerLayoutGuide type="bottom" id="6LR-uA-vsG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TOz-uS-f9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-CR-JId">
+                                <rect key="frame" x="0.0" y="20" width="375" height="274"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="wB5-oG-rFO"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roman Arkhipov &amp; Yuri Bashmet - When I was a little boy (Live)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4u6-Gz-FO3">
+                                <rect key="frame" x="16" y="309" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="5Jv-PJ-KDH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roman Band's music" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHn-QG-D5F">
+                                <rect key="frame" x="16" y="375" width="343" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="H6E-D9-6HZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p2-nA-h4G">
+                                <rect key="frame" x="16" y="594" width="343" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.27350093349530202" blue="0.25006991048120802" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="V1J-3g-wAR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="QrA-uc-6mF" eventType="touchUpInside" id="pol-uG-r5I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7p2-nA-h4G" firstAttribute="leading" secondItem="TOz-uS-f9S" secondAttribute="leadingMargin" id="3b8-7l-Yo8"/>
+                            <constraint firstItem="NHn-QG-D5F" firstAttribute="leading" secondItem="TOz-uS-f9S" secondAttribute="leadingMargin" id="5pE-O7-2w7"/>
+                            <constraint firstItem="6LR-uA-vsG" firstAttribute="top" secondItem="7p2-nA-h4G" secondAttribute="bottom" constant="20" id="AZs-Xt-4Le"/>
+                            <constraint firstItem="4u6-Gz-FO3" firstAttribute="trailing" secondItem="TOz-uS-f9S" secondAttribute="trailingMargin" id="Hh8-O1-IdC"/>
+                            <constraint firstItem="NHn-QG-D5F" firstAttribute="top" secondItem="4u6-Gz-FO3" secondAttribute="bottom" constant="15" id="Lbf-0J-jD8"/>
+                            <constraint firstItem="b0G-CR-JId" firstAttribute="leading" secondItem="TOz-uS-f9S" secondAttribute="leading" id="Z2l-dl-5lC"/>
+                            <constraint firstAttribute="trailing" secondItem="b0G-CR-JId" secondAttribute="trailing" id="abc-bm-Pzl"/>
+                            <constraint firstItem="b0G-CR-JId" firstAttribute="top" secondItem="TOz-uS-f9S" secondAttribute="top" constant="20" id="cn5-Tp-UTG"/>
+                            <constraint firstItem="4u6-Gz-FO3" firstAttribute="leading" secondItem="TOz-uS-f9S" secondAttribute="leadingMargin" id="dZf-4N-6mt"/>
+                            <constraint firstItem="NHn-QG-D5F" firstAttribute="trailing" secondItem="TOz-uS-f9S" secondAttribute="trailingMargin" id="go0-7F-Rrl"/>
+                            <constraint firstItem="7p2-nA-h4G" firstAttribute="trailing" secondItem="TOz-uS-f9S" secondAttribute="trailingMargin" id="ji4-DK-llH"/>
+                            <constraint firstItem="4u6-Gz-FO3" firstAttribute="top" secondItem="b0G-CR-JId" secondAttribute="bottom" constant="15" id="tkY-vl-5Ev"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="NHn-QG-D5F" id="uyF-ic-lXU"/>
+                        <outlet property="titleLbl" destination="4u6-Gz-FO3" id="vXS-nO-wLc"/>
+                        <outlet property="webView" destination="b0G-CR-JId" id="3tC-rh-BH9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQP-8w-sqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

@@ -16,6 +16,7 @@
 		44BFF6CD1E025B890018DEBB /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFF6CC1E025B890018DEBB /* HTTPService.m */; };
 		44BFF6D11E03551D0018DEBB /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFF6D01E03551D0018DEBB /* VideoCell.m */; };
 		44BFF6D61E035B780018DEBB /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFF6D51E035B780018DEBB /* Video.m */; };
+		44BFF6D91E0383F60018DEBB /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFF6D81E0383F60018DEBB /* VideoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		44BFF6D01E03551D0018DEBB /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		44BFF6D41E035B780018DEBB /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		44BFF6D51E035B780018DEBB /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		44BFF6D71E0383F60018DEBB /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		44BFF6D81E0383F60018DEBB /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			children = (
 				44BFF6B91E025B580018DEBB /* ViewController.h */,
 				44BFF6BA1E025B580018DEBB /* ViewController.m */,
+				44BFF6D71E0383F60018DEBB /* VideoVC.h */,
+				44BFF6D81E0383F60018DEBB /* VideoVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				44BFF6D11E03551D0018DEBB /* VideoCell.m in Sources */,
 				44BFF6CD1E025B890018DEBB /* HTTPService.m in Sources */,
 				44BFF6D61E035B780018DEBB /* Video.m in Sources */,
+				44BFF6D91E0383F60018DEBB /* VideoVC.m in Sources */,
 				44BFF6B81E025B580018DEBB /* AppDelegate.m in Sources */,
 				44BFF6B51E025B580018DEBB /* main.m in Sources */,
 			);
@@ -325,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6M25Y2RLSL;
 				INFOPLIST_FILE = YouPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eeboxapps.YouPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,6 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6M25Y2RLSL;
 				INFOPLIST_FILE = YouPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eeboxapps.YouPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";

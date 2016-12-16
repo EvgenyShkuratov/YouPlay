@@ -8,7 +8,7 @@
 
 #import "HTTPService.h"
 
-#define URL_BASE "http://localhost:6069"
+#define URL_BASE "http://192.168.0.101:6069"
 #define URL_VIDEOS "/videos"
 
 @implementation HTTPService
